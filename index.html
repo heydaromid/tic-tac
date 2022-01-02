@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>XOXO</title>
+</head>
+
+<body class="min-vh-100 bg-transparent">
+    <div id="main" class="container vh-100 flex-column justify-content-center align-items-center">
+        <div id="message" class="text-center text-danger fw-bold mb-3"></div>
+        <div id="start-box" class="p-5 bg-warning">
+            <h1 class="h1 text-center">XOXO</h1>
+            <div id="player-info" class="row my-3">
+                <div id="player-info-1" class="col">
+                    <h4>Player 1</h4>
+                    <div class="mb-3">
+                        <label for="player-name-1" class="form-label">
+                            Input your name</label>
+                        <input type="text" id="player-name-1" class="form-control">
+                    </div>
+                    <div class="mb-3">
+                        <label for="sign-1" class="form-label">Input your sign</label>
+                        <input type="text" id="sign-1" class="form-control">
+                    </div>
+                </div>
+                <div id="player-info-2" class="col">
+                    <h4>Player 2</h4>
+                    <div class="mb-3">
+                        <label for="player-name-2" class="form-label">
+                            Input your name</label>
+                        <input type="text" id="player-name-2" class="form-control">
+                    </div>
+                    <div class="mb-3">
+                        <label for="sign-2" class="form-label">Input your sign</label>
+                        <input type="text" id="sign-2" class="form-control">
+                    </div>
+                </div>
+            </div>
+            <div id="contorol-btn">
+                <div class="text-center">
+                    <button type="text" id="play" class="btn btn-dark">Play now!</button>
+                </div>
+            </div>
+        </div>
+        <div id="alert" class="justify-content-center align-items-center w-100 h-100 position-fixed fs-3 fw-bold text-danger"></div>
+        <div id="game-board">
+            <div class="d-flex">
+                <div class="noturn col">
+                    <span id="turn1"></span>
+                    <span id="point1" class="point">0</span>
+                </div>
+                <div class="noturn col">
+                    <span id="turn2"></span>
+                    <span id="point2" class="point">0</span>
+                </div>
+            </div>
+            <div id="board" class="mb-3"></div>
+            <div class="text-center">
+                <button type="button" id="reset" class="btn btn-outline-danger">Reset game</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

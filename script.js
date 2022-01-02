@@ -48,8 +48,6 @@ play.addEventListener('click', () => {
             let point1 = 0;
             let point2 = 0;
             for (let j = 0 ; j < boardElement.length ; j++) {
-                // active player
-                const turn = document.querySelectorAll(`.noturn`);
                 boardElement[j].addEventListener('click' , () => {
                     // select elements by player
                     if (boardElement[j].innerHTML === "") {
@@ -68,7 +66,7 @@ play.addEventListener('click', () => {
                             || elements1.includes(0) && elements1.includes(4) && elements1.includes(8) === true
                             || elements1.includes(2) && elements1.includes(4) && elements1.includes(6) === true) {
                                 alertGame.style.display = "flex";
-                                alertGame.innerHTML = `${info1.name} is won`;
+                                alertGame.innerHTML = `${info1.name} is won 🎊`;
                                 point1++;
                                 const result1 = document.querySelector(`#point1`);
                                 result1.innerHTML = point1;
@@ -93,7 +91,7 @@ play.addEventListener('click', () => {
                             || elements2.includes(0) && elements2.includes(4) && elements2.includes(8) === true
                             || elements2.includes(2) && elements2.includes(4) && elements2.includes(6) === true) {
                                 alertGame.style.display = "flex";
-                                alertGame.innerHTML = `${info2.name} is won`;
+                                alertGame.innerHTML = `${info2.name} is won 🎊`;
                                 point2++;
                                 const result2 = document.querySelector(`#point2`);
                                 result2.innerHTML = point2;

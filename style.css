@@ -35,7 +35,7 @@ html {
     font-weight: bold;
 }
 
-.noturn {
+/* .noturn {
     padding: 1rem;
     color: #929292;
     text-align: center;
@@ -44,7 +44,7 @@ html {
     box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
     border-radius: .5rem;
     margin: 0 2px 1rem;
-}
+} */
 
 .turn {
     padding: 1rem;
